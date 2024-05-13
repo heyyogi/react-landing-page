@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-color: blue;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url(images/image-header.jpg);
+  background-position: center, bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header {
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.menu span {
+  margin-right: 30px;
+}
+
+.contact {
+  background-color: white;
+  color: black;
+  padding: 4px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+
+}
+
+.contact:hover {
+  background-color: burlywood;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 70px;
+  flex-grow: 1;
+  color: whitesmoke;
+  font-weight: bold;
+
+
+}
+
+.arrow {
+  margin-top: 60px;
+}
+
+.section1,
+.section3 {
+  display: flex;
+  height: 350px;
+}
+
+.section1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section1 .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.section1 .text-container {
+  width: 70%;
+}
+
+.left h1 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+.left p {
+  color: #848391;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.left .button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left div img {
+  width: 150px;
+}
+
+.left,
+.right {
+  flex: 1;
+}
+
+/*-- section 2--*/
+
+.section2 {
+  display: flex;
+  height: 350px;
+}
+
+.section2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section2 .text-container img {
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.section2 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right p {
+  color: #848391;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.right .button {
+  display: flex;
+  align-items: center;
+  size: 150px;
+  cursor: pointer;
+}
+
+.left .right {
+  flex: 1;
+}
+
+.right {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.left img,
+.right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-- testinomials --*/
+
+
+.testinomials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbf8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.testinomials h1 {
+  color: #a0a1a2;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+
+}
+
+.clients .client {
+  display: flex;
+  flex-direction: column;
+  flex: 0.3;
+  align-items: center;
+}
+
+.client-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client,
+.client-image {
+  margin-bottom: 30px;
+}
+
+.client p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.client,
+.details {
+  text-align: center;
+}
+
+.client h4 {
+  color: #848391;
+  margin-top: 8px;
+}
+
+.section5 {
+  display: flex;
+}
+
+.section5 div {
+  flex: 0.25;
+}
+
+.section5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--- FOOTER ---*/
+
+.footer {
+  background-color: #90d4c5;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 50pxc;
+}
+
+.footer .logo {
+  color: #90d4c5;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+.footer-nav {
+  color: #4f9485;
+  margin-top: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-nav span {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.footer-nav span:hover {
+  color: #a0a1a2;
+}
+
+.footer .social-media {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.social-media img {
+  padding: 4px;
+}
+
+@media (max-width: 375px) {
+  .section1 {
+    flex-direction: column;
+  }
+
+}
